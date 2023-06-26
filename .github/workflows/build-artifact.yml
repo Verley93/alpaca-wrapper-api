@@ -32,6 +32,7 @@ jobs:
 
       - name: 'Build + push image'
         run: |
+          chmod +x gradlew
           ./gradlew bootBuildImage
 
       - name: 'Upload build artifact to runner'
